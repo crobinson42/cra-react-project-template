@@ -1,6 +1,5 @@
 
-#### Template project using create-react-app as a base with setup for stream-lining
-a react project start.
+#### Template project using create-react-app as a base with setup for stream-lining a react project start.
 
 - Redux and store
 - Redux-axios-middleware and api config dir/file
