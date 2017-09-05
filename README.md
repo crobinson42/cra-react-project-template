@@ -1,3 +1,17 @@
+
+#### Template project using create-react-app as a base with setup for stream-lining
+a react project start.
+
+- Redux and store
+- Redux-axios-middleware and api config dir/file
+- LocalStorage for redux
+- React-router v4 setup with auth routes and async component loading
+- lodash-es
+- eslint config with airbnb
+- stylelint
+
+------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
