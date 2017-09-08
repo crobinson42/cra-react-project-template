@@ -5,6 +5,8 @@
     "axios": "^0.16.2",
     "history": "^4.7.2",
     "lodash-es": "^4.17.4",
+    "node-sass-chokidar": "^0.0.3",
+    "npm-run-all": "^4.1.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-loading": "^0.1.4",
@@ -17,8 +19,12 @@
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm-s build-css build-js",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-cra": "react-scripts start",
+    "start": "npm-run-all -p start-cra watch-css",
+    "build-js": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
