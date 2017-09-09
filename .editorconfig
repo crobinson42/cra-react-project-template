@@ -19,7 +19,7 @@ indent_style = tab
 
 # Indentation override for all code under src directory
 [src/**.{js,jsx,scss}]
-indent_style = tab
+indent_style = space
 indent_size = 2
 
 # Matches the exact files either package.json or .travis.yml
