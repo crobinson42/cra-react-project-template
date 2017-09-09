@@ -1,22 +1,25 @@
-import React, { Component } from 'react'
-// import PropTypes from 'prop-types'
+import React from 'react'
+import PropTypes from 'prop-types'
 
-class DashboardWrapper extends Component {
-  // static propTypes = {}
+import Navbar from './Navbar'
+import Sidebar from './Sidebar'
+import './index.css'
 
-  // static defaultProps = {}
+const DashboardWrapper = ({ children }) => (
+  <div>
+    <Navbar />
 
-  render () {
-    return (
-      <div>
-        Wrapper for dashboard
+    <div className="d-flex">
+      <Sidebar />
 
-        <div>
-          {this.props.children}
-        </div>
-      </div>
-    )
-  }
+      <main>{children}</main>
+    </div>
+  </div>
+)
+
+DashboardWrapper.propTypes = {
+  children: PropTypes.node.isRequired,
 }
+DashboardWrapper.defaultProps = {}
 
 export default DashboardWrapper

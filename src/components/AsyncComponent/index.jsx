@@ -2,7 +2,7 @@ import React from 'react'
 
 import ReactLoading from 'react-loading'
 
-import './index.css'
+import './index.scss'
 
 // getComponent is a function that returns a promise for a component
 // It will not be called until the first mount
